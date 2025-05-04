@@ -1,0 +1,87 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #2980b9;
+}
+
+.learning-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.learning-item {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.learning-item img {
+  width: 100%;
+  height: auto;
+}
+
+.item-content {
+  padding: 1rem;
+}
+
+.item-content h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.item-content p {
+  color: #7f8c8d;
+}
+
+@media (min-width: 600px) {
+  .learning-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ... (kode sebelumnya tetap) ... */
+
+.search-add-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#search-input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
